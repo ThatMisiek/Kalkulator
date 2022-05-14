@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap');
+
+*, *::before, *::after 
+{
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+}
+body
+{
+	padding: 0;
+	margin: 0;	
+	background-image: url("img/hexellence.png");	
+	webkit-touch-callout: none;
+    webkit-user-select: none;
+    khtml-user-select: none;
+    moz-user-select: none;
+    ms-user-select: none;
+    user-select: none;
+}
+
+.kalkulator
+{
+	margin: 25px;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	grid-template-columns: repeat(4, 80px);
+	grid-template-rows: minmax(120px, auto) repeat(6, 80px);
+	min-height: 90vh;	
+}
+
+.wynik
+{
+	grid-column: 1 /-1;
+	background-color: #cccccc;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: space-between;
+	padding: 25px;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+.podglad-dzialan
+{
+	font-size: 15px;
+	font-weight: 400;
+	color: #656565;	
+}
+.teraz-liczone
+{
+	font-size: 30px;
+	font-weight: 500;
+	color: black;
+}
+
+button
+{
+	cursor: pointer;
+	background: #F0F0F0;
+	border: 1px solid #DBDBDB;
+	outline: none;
+}
+
+button.dzialanie, button.cofnij, button.usun
+{
+	background: #e6e6e6;
+}
+
+button:hover
+{
+	background: rgba(219, 219, 219, 0.8);
+}
+
+.col-two
+{
+	grid-column: span 2;
+}
+
+.row-two
+{
+	grid-row: span 2;
+}
+
+
+
+button.rownosc
+{
+	background-color: #b3d9ff;
+}
+
+button.rownosc:hover
+{
+	background: rgba(58, 87, 255, 0.8)
+}
+
